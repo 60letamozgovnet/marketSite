@@ -7,6 +7,7 @@
         <meta content="yes" name="apple-mobile-web-app-capable" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>Test site</title>
+        <script src="../src/skripts/resize_img.js"></script>
         <link rel="stylesheet" href="../src/css/style_index.css"/>
     </head>
     <body style="background-color: black;  color: aliceblue;">
@@ -14,29 +15,81 @@
             <nav>
                 <ul role="list" id="main_nav">
                     <li class="navigation main_nav__item">
-                        <a href="./main.html">Главная</a>
+                        <a href="./connection.html">Связь</a>
                     </li>
                     <li class="navigation main_nav__item">
                         <a href="./about.html">О нас</a>
                     </li>
                     <li class="navigation main_nav__item">
-                        <a href="./shop.html">Магазин</a>
+                        <a href="./shop.html" class="active">Магазин</a>
                     </li>
                     <li class="navigation main_nav__item">
-                        <a href="./connection.html">Связь</a>
+                        <a href="./main.html">Главная</a>
                     </li>
                 </ul>
             </nav>
         </div>
-    </body>
-        <div id="footer">
-            <footer>
-                <p class="footer_items footer_text">©️60letamozgovnet.</p>
-                <div id="links_to_me">
-                    <a class="footer_items" href="https://t.me/mnogoletamozgovnet">Telegram</a>
-                    <a class="footer_items" href="https://vk.com/60letamozgovnet">VK</a>
-                </div>
-            </footer>
+        <div class="product">
+            <table class="main">
+                <tr class="main">
+                    <th class="main">
+                        <table>
+                            <tr>
+                                <th>
+                                    <img class="products" src="../src/img/tshirt_white.png" alt="White T-shirt">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <button onclick="buyProduct('White T-shirt')" class="buy">
+                                        Купить
+                                    </button>
+                                </th>
+                            </tr>
+                        </table>
+                    </th>
+                    <th class="main">
+                        <table>
+                            <tr>
+                                <th>
+                                    <img class="products" src="../src/img/thirt_blk.png" alt="Black T-shirt">
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <button onclick="buyProduct('Black T-shirt')" class="buy">
+                                        Купить
+                                    </button>
+                                </th>
+                            </tr>
+                        </table>
+                    </th>
+                </tr>
+                <tr class="main">
+                    <td class="main">
+                        3
+                    </td>
+                    <td class="main">
+                        3
+                    </td>
+                </tr>
+                <tr class="main">
+                    <td class="main">
+                        3
+                    </td>
+                    <td class="main">
+                        3
+                    </td>
+                </tr>
+                <tr class="main">
+                    <td class="main">
+                        3
+                    </td>
+                    <td class="main">
+                        3
+                    </td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>

@@ -1,3 +1,9 @@
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+
 /* navigations */
 #main_nav{
     margin-left: 0.3%;
@@ -39,12 +45,18 @@ a{
     color: whitesmoke;
 }
 
+.active{
+    font-weight: bold;
+    color: rgb(172, 1, 1);
+}
+
 div#links_to_me{
     width: 50vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
 
 footer{ 
     margin-left: 60px;
@@ -67,16 +79,17 @@ footer{
     vertical-align: middle
 }
 
-
 /* main.html */
-div{
-    display: block;
-    unicode-bidi: isolate;
-}
-
 img#main__image_header{
     width: 100%;
     margin: 0;
+}
+
+div.title{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -84,4 +97,34 @@ img#main__image_header{
 body{
     margin: 0;
     padding: 0;
+}
+
+/* connection.html */
+
+div.connection_content{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 60px;
+    width: auto;
+}
+
+/* shop.html */
+
+div.product{
+    margin-left: 90px;
+    width: auto;
+}
+
+img.products{
+    width: 70%;
+    height: auto;
+}
+
+table#main, th, td{
+    text-align: center;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    width: auto;
 }
