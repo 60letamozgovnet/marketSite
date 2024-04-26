@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 div{
     display: block;
     unicode-bidi: isolate;
@@ -120,6 +129,7 @@ div.products{
 }
 
 img.products{
+    overflow: hidden;
     margin: 1% 1% 1% 1%;
     width: 98%;
     height: auto;
@@ -131,11 +141,6 @@ table.main{
     text-align: center;
     width: auto;
 }
-/* 
-table.main, td, tr{
-    border: 1px solid whitesmoke;
-    border-radius: 3px; 
-} */
 
 td.product{
     width: 35vw;
@@ -143,5 +148,52 @@ td.product{
 
 table.product{
     border: 1px solid red;
-    box-shadow: 0px 0px 20px red;
+    box-shadow: 0px 0px 20px 5px red;
+}
+
+div.tr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div.buy {
+    margin-top: 3vh;
+    width: 170px;
+    height: 70px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #c363cc;
+    cursor: pointer;
+    box-shadow: 5px 5px 0 0;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20px;
+}
+a.buy {
+    position: absolute;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    z-index: 1000;
+}
+div.buy::after {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 170px;
+    height: 70px;
+    background: linear-gradient(to right, #ff7675, #e84393);
+    opacity: 0;
+    transition: 0.3s;
+}
+div.buy:hover {
+    box-shadow: -5px -5px 0 0;
+    transform: scale(0.9);
+}
+div.buy:hover::after {
+    opacity: 1;
 }
